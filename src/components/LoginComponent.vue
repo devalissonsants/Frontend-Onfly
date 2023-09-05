@@ -43,8 +43,7 @@ export default {
         });
 
         localStorage.setItem('token', response.data.access_token);
-
-        this.$router.push('/');
+        this.$router.push('/dashboard');
       } catch (error) {
         console.error('Erro ao fazer login:', error);
       }
