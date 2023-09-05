@@ -30,26 +30,26 @@
       </template>
     </q-table>
 
-    <user-modal
+    <update-modal
       :userId="selectedUser"
       @saved="handleSaveUser"
       ref="editModal"
     />
 
-    <create-user-modal @saved="handleSaveUser" ref="createModal" />
+    <create-modal @saved="handleSaveUser" ref="createModal" />
   </div>
 </template>
 
   <script>
 import { ref, onMounted } from 'vue';
 import { api } from 'boot/axios';
-import UserModal from 'src/components/user/UpdateUserModal.vue';
-import CreateUserModal from 'src/components/user/CreateUserModal.vue';
+import UpdateModal from 'src/components/user/UpdateModal.vue';
+import CreateModal from 'src/components/user/CreateModal.vue';
 
 export default {
   components: {
-    UserModal,
-    CreateUserModal,
+    UpdateModal,
+    CreateModal,
   },
 
   setup() {
