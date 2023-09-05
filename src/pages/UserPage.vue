@@ -107,7 +107,6 @@ export default {
 
     const openCreateModal = () => {
       createModal.value.openModal();
-      console.log('Abriu o modal de criação');
     };
 
     const deleteRow = async (userId) => {
