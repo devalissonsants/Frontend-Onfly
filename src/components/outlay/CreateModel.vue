@@ -11,7 +11,7 @@
           color="grey-8"
           v-close-popup
         ></q-btn>
-        <div class="text-h6">Atualizar dados da despesa</div>
+        <div class="text-h6">Criar uma nova despesa</div>
       </q-card-section>
       <q-separator inset></q-separator>
       <q-card-section class="q-pt-none">
